@@ -59,7 +59,7 @@ function operate(a, op, b) {
     case "+": return a + b;
     case "-": return a - b;
     case "*": return a * b;
-    case "/": return b === 0 ? "Error" : a / b;
+    case "/": return b === 0 ? "Error" : (a / b).toFixed(2);
     case "%": return b === 0 ? "Error" : a % b;
     default: return "Error";
   }
