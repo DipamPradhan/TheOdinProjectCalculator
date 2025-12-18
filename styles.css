@@ -33,6 +33,7 @@ h1 {
   border: 1px solid #000;
   border-radius: 5px;
   background-color: #fff;
+  color: black;
 }
 
 .buttons {
@@ -72,4 +73,16 @@ h1 {
 
 .operand{
     background-color: rgb(56, 91, 161);
+}
+
+.operator.active {
+  background-color: black;
+  color: white;
+  transform: scale(1.12);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+.operator.active:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.12);
 }
